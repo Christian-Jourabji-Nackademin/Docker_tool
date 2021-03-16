@@ -5,8 +5,7 @@ COPY code/* /app/code/
 WORKDIR /app/code
 
 
-ENV PYTHONUNBUFFERED=1
-
+CMD curl -v
 
 RUN echo "**** install Python ****" && \
     apk add --no-cache python3 && \
