@@ -4,8 +4,7 @@ COPY code/* /app/code/
 
 WORKDIR /app/code
 
-
-CMD curl -v
+CMD curl -v $URL
 
 RUN echo "**** install Python ****" && \
     apk add --no-cache python3 && \
